@@ -32,14 +32,5 @@ public class ProfileController {
         return ResponseEntity.ok().body(profiles);
     }
 
-    @PostMapping
-    public ResponseEntity<Profile> create(@RequestBody Profile profile) {
-        Profile created = service.create(profile);
-        URI location = ServletUriComponentsBuilder.fromCurrentRequest()
-                .path("/{profileID}")
-                .buildAndExpand(created.getProfileID())
-                .toUri();
-        return ResponseEntity.created(location).body(created);
-    }
 }
 
