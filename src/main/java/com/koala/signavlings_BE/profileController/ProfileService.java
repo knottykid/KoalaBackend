@@ -1,31 +1,28 @@
 /**
  * The ProfileService class includes list of default items
  *
- * @author Preeti Thorat
+ * @author Preeti Thorat, Luise Loparev
  */
 package com.koala.signavlings_BE.profileController;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.map.repository.config.EnableMapRepositories;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
-@EnableMapRepositories
+//@EnableMapRepositories
 public class ProfileService {
 
-//    @Autowired
-    private final InMemoryProfileRepository repository;
+    @Autowired
+    private ProfileRepository repository;
 
 
-    public ProfileService(@Autowired InMemoryProfileRepository repository) {
+ /*   public ProfileService(@Autowired ProfileRepository repository) {
         this.repository = repository;
 
         this.repository.saveAll(defaultItems());
-    }
+    }*/
 
 
     private static List<Profile> defaultItems() {

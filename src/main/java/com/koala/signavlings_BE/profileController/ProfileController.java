@@ -1,7 +1,7 @@
 /**
  * The ProfileController class includes Get and Post method for all profiles
  *
- * @author Preeti Thorat
+ * @author Preeti Thorat Luise Loparev
  */
 package com.koala.signavlings_BE.profileController;
 

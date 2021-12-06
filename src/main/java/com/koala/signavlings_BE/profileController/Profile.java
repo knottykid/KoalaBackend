@@ -1,7 +1,7 @@
 /**
  * The Profile class contains the declaration of user profile attributes
  *
- * @author Preeti Thorat
+ * @author Preeti Thorat, Luise Loparev
  */
 
 package com.koala.signavlings_BE.profileController;
