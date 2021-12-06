@@ -5,6 +5,7 @@
  */
 package com.koala.signavlings_BE.profileController;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.map.repository.config.EnableMapRepositories;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
@@ -16,11 +17,11 @@ import java.util.List;
 @EnableMapRepositories
 public class ProfileService {
 
+//    @Autowired
+    private final InMemoryProfileRepository repository;
 
-    private final CrudRepository<Profile, Long> repository;
 
-
-    public ProfileService(CrudRepository<Profile, Long> repository) {
+    public ProfileService(@Autowired InMemoryProfileRepository repository) {
         this.repository = repository;
 
         this.repository.saveAll(defaultItems());
