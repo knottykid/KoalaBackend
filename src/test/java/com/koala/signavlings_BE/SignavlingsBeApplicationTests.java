@@ -16,11 +16,4 @@ class SignavlingsBeApplicationTests {
 		int num = 1;
 		Assertions.assertEquals(num, 1);
 	}
-	
-	@Test
-	void shouldNotSucceed(){
-		int num = 1;
-		Assertions.assertEquals(num, 2);
-	}
-
 }
