@@ -28,15 +28,28 @@ public class Profile {
 
     private String role;
 
+    private String photo;
 
 
+/**
+ *     "profileId": 20,
+ *     "name": "John Doe",
+ *     "email": null,
+ *     "location": "Hamburg",
+ *     "join date": "September 2021",
+ *     "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+ *     "role": "Senior BE",
+ *     "team": null,
+ *     "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReBoB3uhPYwy6Vtp1PelM5Zyf8Ov5U98DANA&usqp=CAU"
+*/
     public Profile(
             Long id,
             String name,
             String joiningMonth,
             String location,
             String bio,
-            String role
+            String role,
+            String photo
     ) {
         this.id = id;
         this.name = name;
@@ -44,6 +57,7 @@ public class Profile {
         this.location = location;
         this.bio = bio;
         this.role = role;
+        this.photo = photo;
     }
 
 
@@ -58,7 +72,8 @@ public class Profile {
                 profile.joiningMonth,
                 profile.location,
                 profile.bio,
-                profile.role
+                profile.role,
+                profile.photo
         );
     }
 
@@ -110,5 +125,13 @@ public class Profile {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
     }
 }
