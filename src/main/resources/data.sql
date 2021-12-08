@@ -4,7 +4,7 @@ INSERT INTO profile (id, name,
                       bio,
                       role,
                       photo) VALUES
-                                (20, 'Some other Seedling', 'November', 'Berlin','Superman','BE koala','https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg');
+                                (19, 'Secret Seedling', 'November', 'Berlin','I love eucalyptus and climbing trees.','BE koala','https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg');
 
 
 
