@@ -7,6 +7,17 @@ plugins {
 group = 'com.koala'
 version = '1.0.0'
 sourceCompatibility = '11'
+plugins {
+    id 'java'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.mypackage.MyClass'
+        )
+    }
+}
 
 repositories {
 	mavenCentral()
