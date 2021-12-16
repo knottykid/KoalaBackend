@@ -1,4 +1,6 @@
 version: 0.2
+server:
+    port: $PORT
 
 phases:
   pre_build:
