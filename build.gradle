@@ -3,14 +3,6 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
 }
-
-group = 'com.koala'
-version = '1.0.0'
-sourceCompatibility = '11'
-plugins {
-    id 'java'
-}
-
 jar {
     manifest {
         attributes(
@@ -18,6 +10,12 @@ jar {
         )
     }
 }
+
+
+group = 'com.koala'
+version = '1.0.0'
+sourceCompatibility = '11'
+
 
 repositories {
 	mavenCentral()
